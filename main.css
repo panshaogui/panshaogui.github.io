@@ -74,13 +74,12 @@ div#copyright{
 	padding-right:15%;
 	margin-top:40px;
 	margin-bottom:40px;
+	border:1px solid green;
 }
 div#copyright p {
-}
-div#copyright p span {
 	text-align:center;
-	display:block;
 	font:12px lighter sans-sarif;
+	border:1px solid red;
 }
 
 
