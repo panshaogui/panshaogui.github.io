@@ -11,33 +11,44 @@
 		<link rel="stylesheet" type="text/css" href="./w3.css" />
 	</head>
 	<body>
-		<div id="container" class="w3-container">
+		<nav class="w3-sidenav w3-collapse w3-light-grey w3-card-2 w3-animate-left w3-col s1" style="display:none">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-small w3-hide-large">关闭  &times;</a>
+		<a href="#">list</a>
+		<a href="#">list</a>
+		<a href="#">list</a>
+		</nav>
 
-		<div id="top" class="w3-row w3-grey w3-center">
-			<p>励志前行 良品电脑工作室与您共创美好未来</p>
+
+		<div id="container" class="w3-main"  style="margin-left:8.66666%">
+
+		<div id="top" class="w3-row w3-grey">
+		<p class="w3-center">励志前行 良品工作室与您共创美好未来</p>
+		<span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
 		</div>
-		<div id="main" class="w3-row">
-		<div id="left" class="w3-col s2 w3-yellow">
-			<p>left left left left</p>
-		</div>
 
 
-		<div id="content" class="w3-col s8">
+	
+		<div id="content" class="w3-row">
 		<h1>良品工作室</h1>
 		<p>无印良品电脑工作室成立至今已有十余年，公司早期主营台式机电脑组装与维修、笔记本芯片级维修、数据恢复等业务。</p>
 	
 		</div>
 
-		<div id="right" class="w3-col s2 w3-yellow">	
-			<p>right right right right</p>	
-		</div>
-		</div>
-		<div id="footer" class="w3-row w3-grey w3-center">
-			<div id="copyright">
-				<p><span>Copyright©  2008-2018 良品电脑工作室 版权所有</span></p>
+		<div id="footer" class="w3-row w3-grey">
+			<div id="copyright" class="w3-container">
+				<p class="w3-center">Copyright©  2008-2018 良品工作室 版权所有</p>
 			</div>
 		</div>
 
-	</div>
+		</div>
+
+	<script>
+		function w3_open(){
+		document.getElementsByClassName("w3-sidenav")[0].style.display="block";
+		}
+		function w3_close(){
+		document.getElementsByClassName("w3-sidenav")[0].style.display="none";
+		}
+	</script>
 	</body>
 </html>
